@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:wght@700;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Domine:wght@600&family=Questrial&family=Source+Serif+Pro:wght@600&display=swap');
+$background-color: rgb(44, 44, 44);
+$foreground-color: rgb(255, 255, 255);
+$hero-background-color: rgba(236, 4, 4, 0);
+$proj-background-color: rgba(66, 64, 64, 0.95);
+$icon-color: rgb(214, 228, 135);
+$sub-head-color: rgb(175, 179, 168);
 
-$background-color: rgb(242, 242, 242);
-$foreground-color: rgb(34, 34, 34);
-$hero-background-color: rgb(14, 16, 35);
-$nav-background-color: rgba(14, 16, 35, 0.95);
-$nav-color: rgb(221, 221, 221);
 
 $accent-color: #a0143f;
 
@@ -25,24 +27,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
-  background-color: $nav-background-color;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  .container {
-    display: flex;
-
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    color: $nav-color;
-
-    max-width: 1920px;
-    margin: auto;
-  }
 
   ul.social {
     li {
@@ -53,7 +37,7 @@ nav {
       }
     }
   }
-}
+
 
 section {
   width: 100%;
@@ -94,16 +78,19 @@ section {
   }
 
   &.projects {
-    background-color: invert($foreground-color);
+    background-color: ($proj-background-color);
+    h1 {
+      color: $sub-head-color;
+    }
   }
 
   &.footer {
     min-height: 30vh;
-    background-color: rgb(2, 2, 2);
+    
     color: $background-color;
 
     h1 {
-      color: $background-color;
+      color: $foreground-color;
     }
   }
 }
@@ -115,7 +102,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .intro {
@@ -123,11 +110,13 @@ section {
 }
 
 img.profile {
-  border-radius: 100%;
+  border-radius:100%;
   max-width: 10rem;
   width: 100%;
   height: auto;
-  margin: 4rem;
+  margin: 1rem;
+  border: 3px solid $foreground-color;
+ 
 }
 
 ul,
@@ -145,9 +134,9 @@ a:visited {
 }
 
 h1 {
-  font-family: "Work Sans", sans-serif;
-  font-size: 3.2rem;
-  margin: 0 0 2rem 0;
+  font-family: 'Domine', serif;
+  font-size: 5rem;
+  margin: 0 0 0.4rem 0;
   font-weight: 700;
   color: $foreground-color;
 
@@ -161,20 +150,21 @@ h1 {
 }
 
 h2 {
-  font-family: "Work Sans", sans-serif;
-  font-size: 2rem;
-  margin: 0 0 2rem 0;
-  font-weight: 300;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.7rem;
+  margin: 0 0 3rem 0;
+  font-weight: 400;
   color: $foreground-color;
   text-align: center;
 }
 
 h3 {
   font-family: "Work Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 0 2rem 0;
   font-weight: 300;
   color: $foreground-color;
+  text-align: center;
 
   &.small {
     font-size: 1.3rem;
@@ -191,7 +181,7 @@ button {
   border: none;
   display: flex;
   padding: 0.6rem 1.4rem;
-  background-color: darken($accent-color, 5%);
+  background-color: $sub-head-color;
   color: $background-color;
   border-radius: 3px;
   text-transform: uppercase;
@@ -203,7 +193,7 @@ button {
   align-items: center;
 
   &:hover {
-    background-color: $accent-color;
+    background-color: $icon-color;
   }
 }
 
@@ -232,6 +222,8 @@ ul.social {
 
   li {
     margin: 1rem;
+    color: $icon-color;
+
 
     svg {
       width: 1.8rem;
