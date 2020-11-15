@@ -190,6 +190,7 @@ h4 {
 p {
   font-size: 1.2rem;
   padding-bottom: 1rem;
+  font-family: "Questrial", sans-serif;
   
 }
 
@@ -239,10 +240,11 @@ ul.social {
   li {
     margin: 1rem;
     color: $icon-color;
-
+    
 
     svg {
       width: 1.8rem;
+      
     }
   }
 }
@@ -271,7 +273,7 @@ ul.social {
       transition: opacity 500ms ease-in-out;
 
       img {
-        width: 95%;
+        width: 90%;
         height: auto;
         padding: 0.5rem;
       }
