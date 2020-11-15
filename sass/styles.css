@@ -83,7 +83,7 @@ section.experience p {
 }
 
 section.projects {
-  background-color: rgba(66, 64, 64, 0.95);
+  background-color: inherit;
 }
 
 section.projects h1 {
