@@ -271,7 +271,16 @@ ul.social {
 
 ul.social li {
   margin: 1rem;
-  color: #d6e487;
+  color: #cccccc;
+}
+
+ul.social li:hover {
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
 ul.social li svg {

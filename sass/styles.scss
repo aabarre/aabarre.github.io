@@ -234,6 +234,8 @@ ul.skills {
     font-weight: bold;
     margin: 0.8rem;
     text-align: center;
+
+    
   }
 }
 
@@ -243,8 +245,12 @@ ul.social {
 
   li {
     margin: 1rem;
-    color: $icon-color;
-    
+    color: $sub-head-color;
+
+    &:hover {
+      transition: transform .4s;
+      transform: scale(1.7); 
+    }
 
     svg {
       width: 1.8rem;
