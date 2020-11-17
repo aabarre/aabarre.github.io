@@ -6,7 +6,7 @@ $foreground-color: rgb(255, 255, 255);
 $hero-background-color: rgba(236, 4, 4, 0);
 $proj-background-color: rgba(66, 64, 64, 0.95);
 $background-image: linear-gradient($background-color,$proj-background-color);
-$icon-color: rgb(214, 228, 135);
+$icon-color: rgb(218, 238, 177);
 $sub-head-color: darken($foreground-color,20%);
 
 
@@ -245,11 +245,14 @@ ul.social {
 
   li {
     margin: 1rem;
-    color: $sub-head-color;
+    color: $icon-color;
+    transition: transform .4s ease-in-out;
+    
 
     &:hover {
-      transition: transform .4s;
-      transform: scale(1.7); 
+
+      transform: scale(2); 
+            
     }
 
     svg {
@@ -291,7 +294,8 @@ ul.social {
       }
 
       img:hover {
-        transform: scale(1.4); 
+        transform: scale(1.4);
+        transition-delay: 0.2s; 
         }
 
       &.active {

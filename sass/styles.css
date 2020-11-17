@@ -229,7 +229,7 @@ button {
 }
 
 button:hover {
-  background-color: #d6e487;
+  background-color: #daeeb1;
 }
 
 ul.skills {
@@ -271,16 +271,16 @@ ul.social {
 
 ul.social li {
   margin: 1rem;
-  color: #cccccc;
+  color: #daeeb1;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
 }
 
 ul.social li:hover {
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 ul.social li svg {
@@ -337,6 +337,8 @@ ul.social li svg {
 .slider .slides .slide img:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .slider .slides .slide.active {
