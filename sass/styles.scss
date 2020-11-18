@@ -169,7 +169,7 @@ h3 {
   font-family: "Questrial", sans-serif;
   font-size: 1.5rem;
   margin: 0 0 2rem 0;
-  font-weight: 400;
+  font-weight: 500;
   color: darken($foreground-color,5%);
   text-align: center;
 
@@ -251,7 +251,7 @@ ul.social {
 
     &:hover {
 
-      transform: scale(2); 
+      transform: scale(1.5); 
             
     }
 
@@ -286,6 +286,9 @@ ul.social {
       transition: opacity 500ms ease-in-out;
 
       img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 90%;
         height: auto;
         padding: 0.5rem;
@@ -294,8 +297,8 @@ ul.social {
       }
 
       img:hover {
-        transform: scale(1.4);
-        transition-delay: 0.2s; 
+        transform: scale(1.05);
+        transition-delay: 0.1s; 
         }
 
       &.active {
